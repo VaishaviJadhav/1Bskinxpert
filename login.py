@@ -17,7 +17,7 @@ def login_action():
         messagebox.showerror("Error!", "All fields are Required")
     else:
         try:
-            connection = pymysql.connect(host='localhost', user='root', password='123456', database='skinxpert')
+            connection = pymysql.connect(host='localhost', user='root', password='Azra@23oct', database='skinxpert')
             cur = connection.cursor()
             cur.execute("Select * from signup where username=%s and password=%s", (u, p))
             row = cur.fetchone()

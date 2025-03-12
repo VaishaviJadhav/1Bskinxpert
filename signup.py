@@ -20,7 +20,7 @@ def signup_action():
     else:
         try:
             # Establishing MySQL connection
-            connection = pymysql.connect(host='localhost', user='root', password='123456', database='skinxpert')
+            connection = pymysql.connect(host='localhost', user='root', password='Azra@23oct', database='skinxpert')
             cur = connection.cursor()
             
             # Check if the username already exists
